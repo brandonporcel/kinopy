@@ -3,11 +3,14 @@ import { useEffect, useRef, useState } from 'react';
 import './index.css';
 import postersJson from './api/posters.JSON';
 import PosterItem from './components/PosterItem';
+import LetterSpy from './components/LetterSpy';
+import Footer from './components/Footer';
 function App() {
-	const wrapperRef = useRef();
+	const wrapperRef = useRef(),
+		spyLetterRef = useRef();
 	const [postersData, setPostersData] = useState([]);
 	const [allItems, setAllItems] = useState([]);
-
+	// api
 	useEffect(() => {
 		const a = async (endpoint) => {
 			try {
@@ -21,14 +24,17 @@ function App() {
 		};
 		a(postersJson);
 	}, []);
+	// intersection->letter,bground
 	useEffect(() => {
 		const options = {
 			threshold: 0.8,
 		};
 		const detectIntersection = (entries) => {
 			entries.forEach((el) => {
-				if (el.isIntersecting)
+				if (el.isIntersecting) {
+					spyLetterRef.current.textContent = el.target.dataset.title[0];
 					wrapperRef.current.style.background = el.target.dataset.color;
+				}
 			});
 		};
 		const observer = new IntersectionObserver(detectIntersection, options);
@@ -40,6 +46,7 @@ function App() {
 	return (
 		<div className="wrapper" ref={wrapperRef}>
 			<h1 className="title">KINOPY</h1>
+			<LetterSpy spyLetterRef={spyLetterRef} />
 			{postersData.map((el) => (
 				<PosterItem
 					id={el.id}
@@ -49,6 +56,7 @@ function App() {
 					poster={el.poster}
 				/>
 			))}
+			<Footer />
 		</div>
 	);
 }
