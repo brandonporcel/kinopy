@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 const FooterTag = styled.footer`
 	padding: 20px 0;
 	text-align: center;
@@ -21,7 +22,9 @@ const FooterTag = styled.footer`
 export default function Footer() {
 	return (
 		<FooterTag>
-			<h2>Check 2nd Part</h2>
+			<h2>
+				<Link to="/molly"> Check 2nd Part </Link>
+			</h2>
 			<div>
 				<ul>
 					<li>

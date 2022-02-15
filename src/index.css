@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,500;0,800;1,600&display=swap');
 * {
 	margin: 0;
 	padding: 0;
@@ -10,6 +11,7 @@ html {
 :root {
 	--white: #eee;
 	--black: #222;
+	--black-molly: #000;
 }
 body {
 	font-family: Roboto;
@@ -31,4 +33,10 @@ img {
 }
 a {
 	color: inherit;
+}
+.j-center {
+	justify-self: center;
+}
+.j-end {
+	justify-self: end;
 }
