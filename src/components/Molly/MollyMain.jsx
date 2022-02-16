@@ -83,7 +83,7 @@ const MainContainer = styled.main`
 			height: auto;
 			img {
 				position: absolute;
-				object-fit: cover;
+				object-fit: none;
 				height: 100%;
 			}
 		}

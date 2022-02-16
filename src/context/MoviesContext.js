@@ -32,28 +32,37 @@ const MoviesProvider = ({ children }) => {
 	);
 
 	console.log(posterPreviewIndex, 'el index del q se v');
+	const selectNewPoster = (index, array, next = true) => {
+		const condition = next ? index < array.length - 1 : index > 0;
+		const nextIndex = next
+			? condition
+				? postersIndex + 1
+				: 0
+			: condition
+			? index - 1
+			: array.length - 1;
+		setSelectedMovie(array[nextIndex]);
+		setPostersIndex(nextIndex);
+	};
+	const selectNewPosterPreview = (index, array, next = true) => {
+		const condition = next ? index < array.length - 1 : index > 0;
+		const nextIndex = next
+			? condition
+				? index + 1
+				: 0
+			: condition
+			? index - 1
+			: array.length - 1;
+		setPosterPreviewIndex(nextIndex);
+		setSelectedNextMoviePreview(array[nextIndex]);
+	};
 	const previous = () => {
-		const condition = postersIndex > 0;
-		const previousIndex = condition ? postersIndex - 1 : movies.length - 1;
-
-		setSelectedMovie(movies[previousIndex]);
-		setPostersIndex(previousIndex);
-
-		const previewCondition = posterPreviewIndex > 0;
-		const nextPreviewIndex = previewCondition ? posterPreviewIndex - 1 : 2;
-		setPosterPreviewIndex(nextPreviewIndex);
-		setSelectedNextMoviePreview(movies[nextPreviewIndex]);
+		selectNewPoster(postersIndex, movies, false);
+		selectNewPosterPreview(posterPreviewIndex, movies, false);
 	};
 	const next = () => {
-		const condition = postersIndex < movies.length - 1;
-		const nextIndex = condition ? postersIndex + 1 : 0;
-		setPostersIndex(nextIndex);
-		setSelectedMovie(movies[nextIndex]);
-
-		const previewCondition = posterPreviewIndex < movies.length - 1;
-		const nextPreviewIndex = previewCondition ? posterPreviewIndex + 1 : 0;
-		setPosterPreviewIndex(nextPreviewIndex);
-		setSelectedNextMoviePreview(movies[nextPreviewIndex]);
+		selectNewPoster(postersIndex, movies);
+		selectNewPosterPreview(posterPreviewIndex, movies);
 	};
 
 	const data = { selectedMovie, next, selectedNextMoviePreview, previous };
