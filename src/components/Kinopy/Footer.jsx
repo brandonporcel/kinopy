@@ -23,7 +23,7 @@ export default function Footer() {
 	return (
 		<FooterTag>
 			<h2>
-				<Link to="/molly"> Check 2nd Part </Link>
+				<Link to="/kalli"> Check 2nd Part </Link>
 			</h2>
 			<div>
 				<ul>

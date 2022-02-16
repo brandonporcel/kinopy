@@ -14,7 +14,7 @@ const Container = styled.header`
 		width: 20px;
 	}
 `;
-export default function MollyHeader() {
+export default function KalliHeader() {
 	return (
 		<Container className="sides-p">
 			<div className="menu">
@@ -22,7 +22,7 @@ export default function MollyHeader() {
 					<img src={images.left} alt="" />
 				</Link>
 			</div>
-			<h1 className="j-center">molly</h1>
+			<h1 className="j-center">kalli</h1>
 			<div className="searcher j-end">
 				<img src={images.search} alt="" />
 			</div>

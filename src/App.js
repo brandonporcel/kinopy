@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Kinopy from './components/Kinopy/Kinopy';
-import Molly from './components/Molly/Molly';
+import Kalli from './components/Kalli/Kalli';
 function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Kinopy />} />
-				<Route path="/molly" element={<Molly />} />
+				<Route path="/kalli" element={<Kalli />} />
 			</Routes>
 		</BrowserRouter>
 	);

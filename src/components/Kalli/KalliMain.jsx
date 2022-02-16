@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import styled, { keyframes } from 'styled-components';
 import MoviesContext from '../../context/MoviesContext';
 
-import MollyPreview from './MollyPreview';
+import KalliPreview from './KalliPreview';
 const titleAnimation = keyframes`
 	from {
 		opacity:20%;
@@ -52,7 +52,7 @@ const MainContainer = styled.main`
 	}
 `;
 
-export default function MollyMain() {
+export default function KalliMain() {
 	const { selectedMovie } = useContext(MoviesContext);
 
 	return (
@@ -64,7 +64,7 @@ export default function MollyMain() {
 			<div className="background-title">
 				<h2>{selectedMovie.phrase}</h2>
 			</div>
-			<MollyPreview />
+			<KalliPreview />
 		</MainContainer>
 	);
 }

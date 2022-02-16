@@ -64,7 +64,7 @@ const NextPreviewContainer = styled.article`
 		}
 	}
 `;
-export default function MollyPreview() {
+export default function KalliPreview() {
 	const { next, selectedNextMoviePreview } = useContext(MoviesContext);
 
 	return (

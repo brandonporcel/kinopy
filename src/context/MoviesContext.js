@@ -77,9 +77,7 @@ const MoviesProvider = ({ children }) => {
 		selectNewPoster(postersIndex, movies);
 		selectNewPosterPreview(posterPreviewIndex, movies);
 	};
-	const selectSpecificPoster = (num) => {
-		setPostersIndex(num);
-	};
+
 	const data = {
 		selectedMovie,
 		next,
@@ -87,7 +85,6 @@ const MoviesProvider = ({ children }) => {
 		previous,
 		movies,
 		postersIndex,
-		selectSpecificPoster,
 	};
 
 	return (

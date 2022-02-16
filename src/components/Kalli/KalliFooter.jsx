@@ -6,9 +6,6 @@ import images from '../../images-svg/imagesSvg';
 const FooterContainer = styled.footer`
 	font-family: Sarabun;
 
-	.read-more-p {
-		/* animation */
-	}
 	.footer-slider {
 		display: flex;
 		gap: 50px;
@@ -41,7 +38,7 @@ const FooterContainer = styled.footer`
 		}
 	}
 `;
-export default function MollyFooter() {
+export default function KalliFooter() {
 	const { postersIndex, movies, selectedMovie, previous, next } =
 		useContext(MoviesContext);
 

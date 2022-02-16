@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { MoviesProvider } from '../../context/MoviesContext';
-import MollyFooter from './MollyFooter';
-import MollyHeader from './MollyHeader';
-import MollyMain from './MollyMain';
+import KalliFooter from './KalliFooter';
+import KalliHeader from './KalliHeader';
+import KalliMain from './KalliMain';
 const Wrapper = styled.div`
 	.sides-p {
 		padding: 25px 50px;
@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 	display: grid;
 	grid-template-rows: 90px 1fr 90px;
 	height: 100vh;
-	background: var(--black-molly);
+	background: #000;
 	color: var(--white);
 	header,
 	footer {
@@ -39,13 +39,13 @@ const Wrapper = styled.div`
 	}
 `;
 
-export default function Molly() {
+export default function Kalli() {
 	return (
 		<MoviesProvider>
 			<Wrapper>
-				<MollyHeader />
-				<MollyMain />
-				<MollyFooter />
+				<KalliHeader />
+				<KalliMain />
+				<KalliFooter />
 			</Wrapper>
 		</MoviesProvider>
 	);
