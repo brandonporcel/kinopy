@@ -3,25 +3,25 @@
 		"id": 1,
 		"title": "The Headless Woman",
 		"background": "#EC1D25",
-		"poster": "./images/headless-woman.jpg"
+		"poster": "headless-woman.jpg"
 	},
 	{
 		"id": 2,
 		"title": "Stolen Kisses",
 		"background": "#D78987",
-		"poster": "./images/stolen-kisses.jpg"
+		"poster": "stolen-kisses.jpg"
 	},
 	{
 		"id": 3,
 		"title": "L'eclisse",
 		"background": "#DC7727",
-		"poster": "./images/leclisse.jpg"
+		"poster": "leclisse.jpg"
 	},
 
 	{
 		"id": 4,
 		"title": "Offering",
 		"background": "#1C2A1B",
-		"poster": "./images/offering.jpg"
+		"poster": "offering.jpg"
 	}
 ]

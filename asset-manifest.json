@@ -1,21 +1,33 @@
 {
   "files": {
     "main.css": "/kinopy/static/css/main.82789567.css",
-    "main.js": "/kinopy/static/js/main.d3fc3908.js",
+    "main.js": "/kinopy/static/js/main.b7ffdb2c.js",
     "static/js/787.9eff65e3.chunk.js": "/kinopy/static/js/787.9eff65e3.chunk.js",
+    "static/media/come-and-see.png": "/kinopy/static/media/come-and-see.9330c8d3ac79437f58ad.png",
+    "static/media/pic1.png": "/kinopy/static/media/pic1.49ff93bd214d92062f69.png",
+    "static/media/royal.png": "/kinopy/static/media/royal.49ff93bd214d92062f69.png",
+    "static/media/boy.jpg": "/kinopy/static/media/boy.b27a5cfd67839ca9d891.jpg",
+    "static/media/dazed.jpg": "/kinopy/static/media/dazed.420d194640b32f670ddb.jpg",
+    "static/media/headless-woman.jpg": "/kinopy/static/media/headless-woman.d85a9d827419bdfe9374.jpg",
+    "static/media/girl.jpg": "/kinopy/static/media/girl.ce59b3748a0fd86634f0.jpg",
+    "static/media/leclisse.jpg": "/kinopy/static/media/leclisse.b467e3329002dc19b2b6.jpg",
+    "static/media/fallen-angels.jpg": "/kinopy/static/media/fallen-angels.b9da4f2df88bc583531f.jpg",
+    "static/media/grand.jpg": "/kinopy/static/media/grand.f5577e2cbd01bc8072c8.jpg",
+    "static/media/stolen-kisses.jpg": "/kinopy/static/media/stolen-kisses.d67afadeaaca59685a36.jpg",
+    "static/media/offering.jpg": "/kinopy/static/media/offering.50ba0f366da3a1199f05.jpg",
     "static/media/menu.png": "/kinopy/static/media/menu.802322c64d92c6f4d441.png",
     "static/media/left.svg": "/kinopy/static/media/left.63be55e3720272bab8214011710780f5.svg",
     "static/media/search.svg": "/kinopy/static/media/search.8657d35c822ee7f5f73eeda4aa32acbb.svg",
     "static/media/right.svg": "/kinopy/static/media/right.7d53ad0935c37abeee8bb98f88e24fd3.svg",
-    "index.html": "/kinopy/index.html",
     "static/media/line.svg": "/kinopy/static/media/line.7a8a2d7ad7670d0ea60896f993d7c725.svg",
-    "static/media/posters.JSON": "/kinopy/static/media/posters.4762783810017ee0c91e.JSON",
+    "index.html": "/kinopy/index.html",
+    "static/media/posters.JSON": "/kinopy/static/media/posters.200b56ac8dcc64c2b163.JSON",
     "main.82789567.css.map": "/kinopy/static/css/main.82789567.css.map",
-    "main.d3fc3908.js.map": "/kinopy/static/js/main.d3fc3908.js.map",
+    "main.b7ffdb2c.js.map": "/kinopy/static/js/main.b7ffdb2c.js.map",
     "787.9eff65e3.chunk.js.map": "/kinopy/static/js/787.9eff65e3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.82789567.css",
-    "static/js/main.d3fc3908.js"
+    "static/js/main.b7ffdb2c.js"
   ]
 }
