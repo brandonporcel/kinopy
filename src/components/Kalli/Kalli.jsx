@@ -37,6 +37,11 @@ const Wrapper = styled.div`
 			width: 100%;
 		}
 	}
+	@media screen and (max-width: 600px) {
+		.sides-p {
+			padding: 25px;
+		}
+	}
 `;
 
 export default function Kalli() {

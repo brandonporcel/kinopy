@@ -40,6 +40,16 @@ const FooterContainer = styled.footer`
 			}
 		}
 	}
+	@media screen and (max-width: 600px) {
+		.footer-slider {
+			.slider-state-ctn {
+				display: none;
+			}
+		}
+		.background-title {
+			width: max-content;
+		}
+	}
 `;
 export default function KalliFooter() {
 	const { movies, selectedMovie, previous, next } = useContext(MoviesContext);
@@ -47,7 +57,7 @@ export default function KalliFooter() {
 	return (
 		<FooterContainer className="sides-p">
 			<p className="read-more-p">read more</p>
-			<p className="j-center">
+			<p className="j-center background-title">
 				<i>{selectedMovie.name}</i>
 			</p>
 			<div className="footer-slider j-end">

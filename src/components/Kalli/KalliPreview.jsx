@@ -63,6 +63,9 @@ const NextPreviewContainer = styled.article`
 			height: 100%;
 		}
 	}
+	@media screen and (max-width: 600px) {
+		display: none;
+	}
 `;
 export default function KalliPreview() {
 	const { next, selectedNextMoviePreview } = useContext(MoviesContext);

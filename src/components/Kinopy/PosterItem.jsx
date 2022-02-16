@@ -50,6 +50,22 @@ const PosterItemWrapper = styled.section`
 			}
 		}
 	}
+	@media screen and (max-width: 600px) {
+		padding-top: 100px;
+		.poster-item-container {
+			.poster-cover-container {
+				width: 350px;
+				.stamp {
+					width: 50px;
+					height: 50px;
+					right: -20px;
+					span {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
 `;
 export default function PosterItem({ id, background, title, poster }) {
 	return (

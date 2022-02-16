@@ -50,6 +50,20 @@ const MainContainer = styled.main`
 			animation: ${titleAnimation} 2s;
 		}
 	}
+	@media screen and (max-width: 600px) {
+		.background-container {
+			img {
+				width: auto;
+				height: 100%;
+			}
+		}
+		.background-title {
+			height: 20%;
+			h2 {
+				font-size: 30px;
+			}
+		}
+	}
 `;
 
 export default function KalliMain() {

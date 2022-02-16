@@ -12,6 +12,11 @@ const LetterSpyCtn = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	z-index: 50;
+	@media screen and (max-width: 600px) {
+		top: 20px;
+		right: 20px;
+	}
 `;
 export default function LetterSpy({ spyLetterRef }) {
 	return (
