@@ -4,13 +4,13 @@ const movies = [
 	{
 		name: 'Black and White',
 		title: 'Black and White',
-		img: './images-2/girl.jpg',
+		img: 'girl.jpg',
 		phrase: 'Black and White makes everything better.',
 	},
 	{
 		name: 'Design Value',
 		title: 'Design Value',
-		img: './images-2/boy.jpg',
+		img: 'boy.jpg',
 		phrase: 'Design adds value faster than it adds costs.',
 	},
 	// {
@@ -29,7 +29,7 @@ const movies = [
 	{
 		name: '	The Royal Tenenbaums',
 		title: 'The Royal Brothers',
-		img: './images-2/royal.png',
+		img: 'royal.png',
 		phrase: 'Hell of a damn grave. Wish it were mine. ',
 	},
 ];

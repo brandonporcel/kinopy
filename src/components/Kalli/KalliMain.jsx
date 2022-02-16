@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useContext } from 'react';
 import styled, { keyframes } from 'styled-components';
 import MoviesContext from '../../context/MoviesContext';
 
@@ -58,7 +58,10 @@ export default function KalliMain() {
 	return (
 		<MainContainer>
 			<div className="background-container">
-				<img src={selectedMovie.img} alt="" />
+				<img
+					src={require(`../../images-2/${selectedMovie.img}`)}
+					alt={selectedMovie.name}
+				/>
 			</div>
 
 			<div className="background-title">

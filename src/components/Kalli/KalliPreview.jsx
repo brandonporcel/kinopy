@@ -81,7 +81,7 @@ export default function KalliPreview() {
 			</div>
 			<div className="right">
 				<img
-					src={selectedNextMoviePreview.img}
+					src={require(`../../images-2/${selectedNextMoviePreview.img}`)}
 					alt={selectedNextMoviePreview.title}
 				/>
 			</div>

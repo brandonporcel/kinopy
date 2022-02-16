@@ -66,7 +66,7 @@ export default function PosterItem({ id, background, title, poster }) {
 					<div className="stamp">
 						<span>Poster {id}</span>
 					</div>
-					<img src={poster} alt={title} />
+					<img src={require(`../../images/${poster}`)} alt={title} />
 				</div>
 				<div className="poster-info-container">
 					<h3>{title}</h3>
