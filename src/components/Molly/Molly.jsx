@@ -22,6 +22,21 @@ const Wrapper = styled.div`
 		grid-template-columns: repeat(3, 1fr);
 		align-items: center;
 	}
+	.underline {
+		&:before {
+			content: '';
+			display: block;
+			width: 0;
+			height: 3px;
+			background: #00000085;
+			position: absolute;
+			bottom: 0;
+			transition: width 0.5s;
+		}
+		&:hover:before {
+			width: 100%;
+		}
+	}
 `;
 
 export default function Molly() {

@@ -33,23 +33,41 @@ const FooterContainer = styled.footer`
 			margin: 1.5px;
 			cursor: pointer;
 		}
+		.slider-line {
+			opacity: 0.4;
+			&.active {
+				opacity: 1;
+			}
+		}
 	}
 `;
 export default function MollyFooter() {
-	const { previous } = useContext(MoviesContext);
+	const { postersIndex, movies, selectedMovie, previous, next } =
+		useContext(MoviesContext);
+
 	return (
 		<FooterContainer className="sides-p">
 			<p className="read-more-p">read more</p>
 			<p className="j-center">
-				<i>dazed and confused</i>
+				<i>{selectedMovie.name}</i>
 			</p>
 			<div className="footer-slider j-end">
 				<div className="slider-state-ctn">
 					<span>01</span>
 					<div className="lines-ctn">
-						<img className="slider-line" src={images.line} alt="line" />
-						<img className="slider-line" src={images.line} alt="line" />
-						<img className="slider-line" src={images.line} alt="line" />
+						{movies.map((el, i) => {
+							return (
+								<img
+									key={i}
+									data-index={i}
+									className={
+										postersIndex === i ? 'slider-line active' : 'slider-line'
+									}
+									src={images.line}
+									alt="line"
+								/>
+							);
+						})}
 					</div>
 					<span>03</span>
 				</div>
@@ -60,7 +78,12 @@ export default function MollyFooter() {
 						src={images.left}
 						alt="left arrow"
 					/>
-					<img className="arrow" src={images.right} alt="right arrow" />
+					<img
+						className="arrow"
+						onClick={next}
+						src={images.right}
+						alt="right arrow"
+					/>
 				</div>
 			</div>
 		</FooterContainer>
