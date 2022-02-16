@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kinopy/static/css/main.82789567.css",
-    "main.js": "/kinopy/static/js/main.b7ffdb2c.js",
+    "main.js": "/kinopy/static/js/main.df66b424.js",
     "static/js/787.9eff65e3.chunk.js": "/kinopy/static/js/787.9eff65e3.chunk.js",
     "static/media/come-and-see.png": "/kinopy/static/media/come-and-see.9330c8d3ac79437f58ad.png",
     "static/media/pic1.png": "/kinopy/static/media/pic1.49ff93bd214d92062f69.png",
@@ -23,11 +23,11 @@
     "index.html": "/kinopy/index.html",
     "static/media/posters.JSON": "/kinopy/static/media/posters.200b56ac8dcc64c2b163.JSON",
     "main.82789567.css.map": "/kinopy/static/css/main.82789567.css.map",
-    "main.b7ffdb2c.js.map": "/kinopy/static/js/main.b7ffdb2c.js.map",
+    "main.df66b424.js.map": "/kinopy/static/js/main.df66b424.js.map",
     "787.9eff65e3.chunk.js.map": "/kinopy/static/js/787.9eff65e3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.82789567.css",
-    "static/js/main.b7ffdb2c.js"
+    "static/js/main.df66b424.js"
   ]
 }
