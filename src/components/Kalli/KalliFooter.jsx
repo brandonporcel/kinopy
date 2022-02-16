@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+
 import styled from 'styled-components';
 import MoviesContext from '../../context/MoviesContext';
 import images from '../../images-svg/imagesSvg';
@@ -30,17 +31,18 @@ const FooterContainer = styled.footer`
 			margin: 1.5px;
 			cursor: pointer;
 		}
-		.slider-line {
-			opacity: 0.4;
-			&.active {
-				opacity: 1;
+		.lines-ctn {
+			a {
+				opacity: 0.4;
+				&.active {
+					opacity: 1;
+				}
 			}
 		}
 	}
 `;
 export default function KalliFooter() {
-	const { postersIndex, movies, selectedMovie, previous, next } =
-		useContext(MoviesContext);
+	const { movies, selectedMovie, previous, next } = useContext(MoviesContext);
 
 	return (
 		<FooterContainer className="sides-p">
@@ -57,11 +59,9 @@ export default function KalliFooter() {
 								<img
 									key={i}
 									data-index={i}
-									className={
-										postersIndex === i ? 'slider-line active' : 'slider-line'
-									}
 									src={images.line}
 									alt="line"
+									className="slider-line"
 								/>
 							);
 						})}
