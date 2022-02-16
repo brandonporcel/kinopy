@@ -54,11 +54,12 @@ const MainContainer = styled.main`
 		.background-container {
 			img {
 				width: auto;
-				height: 100%;
+				height: 100vh;
 			}
 		}
 		.background-title {
 			height: 20%;
+			margin-left: 50px;
 			h2 {
 				font-size: 30px;
 			}

@@ -15,7 +15,7 @@ const LetterSpyCtn = styled.div`
 	z-index: 50;
 	@media screen and (max-width: 600px) {
 		top: 20px;
-		right: 20px;
+		right: 15px;
 	}
 `;
 export default function LetterSpy({ spyLetterRef }) {

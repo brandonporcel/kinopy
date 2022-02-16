@@ -32,7 +32,7 @@ const FooterContainer = styled.footer`
 			cursor: pointer;
 		}
 		.lines-ctn {
-			a {
+			img {
 				opacity: 0.4;
 				&.active {
 					opacity: 1;
@@ -52,7 +52,8 @@ const FooterContainer = styled.footer`
 	}
 `;
 export default function KalliFooter() {
-	const { movies, selectedMovie, previous, next } = useContext(MoviesContext);
+	const { movies, selectedMovie, previous, next, postersIndex } =
+		useContext(MoviesContext);
 
 	return (
 		<FooterContainer className="sides-p">
@@ -71,7 +72,9 @@ export default function KalliFooter() {
 									data-index={i}
 									src={images.line}
 									alt="line"
-									className="slider-line"
+									className={
+										postersIndex === i ? 'slider-line active' : 'slider-line'
+									}
 								/>
 							);
 						})}
