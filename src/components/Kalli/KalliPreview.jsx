@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import MoviesContext from '../../context/MoviesContext';
 import images from '../../images-svg/imagesSvg';
 import styled, { keyframes } from 'styled-components';
@@ -81,7 +81,7 @@ export default function KalliPreview() {
 			</div>
 			<div className="right">
 				<img
-					src={require(`../../images-2/${selectedNextMoviePreview.img}`)}
+					src={require(`../../images/${selectedNextMoviePreview.img}`)}
 					alt={selectedNextMoviePreview.title}
 				/>
 			</div>

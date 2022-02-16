@@ -59,7 +59,7 @@ export default function KalliMain() {
 		<MainContainer>
 			<div className="background-container">
 				<img
-					src={require(`../../images-2/${selectedMovie.img}`)}
+					src={require(`../../images/${selectedMovie.img}`)}
 					alt={selectedMovie.name}
 				/>
 			</div>
