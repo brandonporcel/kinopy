@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/kinopy/static/css/main.82789567.css",
+    "main.js": "/kinopy/static/js/main.d3fc3908.js",
+    "static/js/787.9eff65e3.chunk.js": "/kinopy/static/js/787.9eff65e3.chunk.js",
+    "static/media/menu.png": "/kinopy/static/media/menu.802322c64d92c6f4d441.png",
+    "static/media/left.svg": "/kinopy/static/media/left.63be55e3720272bab8214011710780f5.svg",
+    "static/media/search.svg": "/kinopy/static/media/search.8657d35c822ee7f5f73eeda4aa32acbb.svg",
+    "static/media/right.svg": "/kinopy/static/media/right.7d53ad0935c37abeee8bb98f88e24fd3.svg",
+    "index.html": "/kinopy/index.html",
+    "static/media/line.svg": "/kinopy/static/media/line.7a8a2d7ad7670d0ea60896f993d7c725.svg",
+    "static/media/posters.JSON": "/kinopy/static/media/posters.4762783810017ee0c91e.JSON",
+    "main.82789567.css.map": "/kinopy/static/css/main.82789567.css.map",
+    "main.d3fc3908.js.map": "/kinopy/static/js/main.d3fc3908.js.map",
+    "787.9eff65e3.chunk.js.map": "/kinopy/static/js/787.9eff65e3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82789567.css",
+    "static/js/main.d3fc3908.js"
+  ]
+}
